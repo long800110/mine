@@ -1,0 +1,261 @@
+@font-face {
+	font-family: 'mineicon';
+	src:url('../fonts/mineicon.eot?-7hqatr');
+	src:url('../fonts/mineicon.eot?#iefix-7hqatr') format('embedded-opentype'),
+		url('../fonts/mineicon.woff?-7hqatr') format('woff'),
+		url('../fonts/mineicon.ttf?-7hqatr') format('truetype'),
+		url('../fonts/mineicon.svg?-7hqatr#mineicon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'led';
+	src:url('../fonts/led.ttf');
+	src:url('../fonts/led.ttf?-7hqatr') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'mineicon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+::selection
+{
+    background: transparent;
+}
+
+.menu {
+	font-size: 10px;
+	width: 292px;	
+}
+.easy .menu {
+	width: 292px !important;
+}
+
+.normal .menu {
+	width: 510px !important;
+}
+
+.hard .menu {
+	width: 943px !important;
+}
+
+.menu > ul {
+	background-color: rgb(223, 223, 223);
+}
+.menu > ul > li {
+	display: inline-block;
+	width: 80px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	background-color: #ddd;
+	border: 1px solid #aaa;
+	cursor:	pointer;
+ }
+
+.sub_menu {
+	display: none;
+	position: absolute;
+	width: 100px;
+	z-index: 2;
+	background-color: #ddd;
+	border: 1px solid #aaa;
+	box-shadow: 1px 1px #ddd;
+}
+
+.sub_menu.active {
+	display: block !important;
+}
+
+
+.sub_menu > li {
+	height: 25px;
+	line-height: 25px;
+	//text-align: center;
+	padding-left: 15px;
+	cursor:	pointer;
+}
+
+.sub_menu > li:nth-of-type(1), .sub_menu > li:nth-of-type(4), .sub_menu > li:nth-of-type(5) {
+	border-bottom: 1px solid #aaa;
+
+}
+
+.ib {
+	display: inline-block;
+}
+.led {
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	position: absolute;
+	border: 1px solid #111;
+	background-color: #222;
+	font-family: led;
+	color: red;
+	top: 10px;
+	font-size: 22px;
+	text-align: center;
+}
+.head, .mineZone {
+	border: 6px solid #ccc;
+	background-color: rgb(223, 223, 223);
+	border-style: inset;
+}
+.head{
+	width: 280px;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+	text-align: center;	
+}
+.easy .head {
+	width: 280px !important;
+}
+.normal .head {
+	width: 498px !important;
+}
+.hard .head {
+	width: 931px !important;
+}
+.btn {
+	background-color: #ddd;
+  	border-left-width: 4px;
+  	border-top-width: 4px;
+  	border-right-width: 4px;
+  	border-bottom-width: 4px;
+}
+#remain {
+	left: 5px;
+}
+#timer {
+	right: 5px;
+}
+#start {
+	width:  30px;
+	height: 30px;
+	vertical-align: middle;
+	
+}
+.icon-smile2:after {
+	font-size: 14px;
+	color: #222;
+	content: "\e9e2";
+}
+.icon-sad2:before {
+	font-size: 14px;
+	color: #222;
+	content: "\e9e6";
+}
+.icon-cool2:before {
+	font-size: 14px;
+	color: #222;
+	content: "\e9ec";
+}
+.icon-b0:after {
+	font-size: 10px;
+	color: #222;
+	content: "\e601";
+}
+.icon-flag:after {
+	font-size: 7px;
+	color: #FF0000;
+	content: "\e9cc";
+}
+.mineZone {
+	width: 280px;
+	height: 280px;
+}
+.easy .mineZone {
+	width: 280px !important;
+	height: 280px !important;
+}
+.normal .mineZone {
+	width: 498px !important;
+	height: 498px !important;
+}
+.hard .mineZone {
+	width: 931px !important;
+	height: 498px !important;
+}
+.mineTable {
+	border-top: 1px solid #444;
+	border-left: 1px solid #444;
+}
+.cell {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	border-right: 1px solid #444;
+	border-bottom: 1px solid #444;
+	text-align: center;
+	font-weight: bolder;
+}
+.n1:after {
+	color: rgb(243, 71, 71);
+	content: "1";
+}
+.n2:after {
+	color: #000080;
+	content: "2";
+}
+.n3:after {
+	color: #008000;
+	content: "3";
+}
+.n4:after {
+	color: #8B0000;
+	content: "4";
+}
+.n5:after {
+	color: #4B0082;
+	content: "5";
+}
+.n6:after {
+	color: #FF4500;
+	content: "6";
+}
+.n7:after {
+	color: #3CB371;
+	content: "7";
+}
+.n8:after {
+	color: #2F4F4F;
+	content: "8";
+}
+.clickable {
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	top: 0px;
+	left:0px;
+	//opacity: .9;
+}
+
+.icon-error-mine:after {
+	font-size: 20px;
+	color: red !important;
+	content: "\e600" !important;
+}
+.cell.flat {
+	
+}
+.cell.flat:after {
+	content: "" !important;
+}
+.cell.flat > .btn {
+	/*特别注意，对这个按钮的隐藏，不能使用dispaly: none 或 visibility: hidden， 用这两个属性都会导致无法捕获该按钮的任何事件 */
+	opacity: 0;
+}

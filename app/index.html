@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>扫雷</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/reset.css" rel="stylesheet" media="screen">
+	<link href="css/mine.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="menu">
+		<ul>
+			<li onclick="toggleMenu()"><a id="m_game" >游戏</a></li>
+			<ul class="sub_menu">
+				<li onclick="start()"><a id="m_start">开局</a></li>
+				<li onclick="setEasy()"><a id="m_easy">初级</a></li>
+				<li onclick="setNormal()"><a id="m_normal">中级</a></li>
+				<li onclick="setHard()"><a id="m_hard">高级</a></li>
+				<li><a id="m_hero">扫雷英雄榜...</a></li>
+				<li onclick="exit()"><a id="m_exit">退出</a></li>
+			</ul>
+		</ul>
+	</div>
+	<div class="wrapper">
+		<div class="head">
+			<div id="remain" class="led ib"></div>
+			<button id="start" class="btn ib icon-smile2"  onclick="start()"></button>
+			<div id="timer" class="led ib"></div>
+		</div>
+		<div id="mineZone" class="mineZone"></div>
+	</div>
+	<script src="js/mine.js"></script>
+    <script src="js/jquery-1.9.1.js"></script>
+  </body>
+</html>
